@@ -1,0 +1,2 @@
+SESS timestamp=36429.913461063 pid=4085 sid=1e8ef7a84db39f05 exename="/home/reallinux/read"
+TASK timestamp=36429.915789735 tid=4085 pid=4085

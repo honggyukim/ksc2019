@@ -1,0 +1,2 @@
+SESS timestamp=36423.818867112 pid=4081 sid=1e286d3e59285f8d exename="/home/reallinux/write"
+TASK timestamp=36423.822445384 tid=4081 pid=4081

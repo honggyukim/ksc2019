@@ -1,0 +1,17 @@
+55828c887000-55828ca89000 r-xp 00000000 00:00 0                          /home/reallinux/read
+7ff249ac5000-7ff249cd5000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/libbz2.so.1.0.4
+7ff249cd5000-7ff249efb000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/liblzma.so.5.2.2
+7ff249efb000-7ff24a118000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/libz.so.1.2.11
+7ff24a118000-7ff24a330000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ff24a330000-7ff24a6ce000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/libm-2.27.so
+7ff24a6ce000-7ff24a8e9000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/libpthread-2.27.so
+7ff24a8ed000-7ff24ad8c000 r-xp 00000000 00:00 0                          /usr/lib/x86_64-linux-gnu/libcapstone.so.3
+7ff24ad8c000-7ff24afd8000 r-xp 00000000 00:00 0                          /usr/lib/x86_64-linux-gnu/libdw-0.170.so
+7ff24afd8000-7ff24b1f2000 r-xp 00000000 00:00 0                          /usr/lib/x86_64-linux-gnu/libelf-0.170.so
+7ff24b1f2000-7ff24b577000 r-xp 00000000 00:00 0                          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+7ff24b57b000-7ff24b77f000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/libdl-2.27.so
+7ff24b77f000-7ff24b987000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/librt-2.27.so
+7ff24b987000-7ff24bd74000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/libc-2.27.so
+7ff24bd78000-7ff24bfae000 r-xp 00000000 00:00 0                          /usr/local/lib/libmcount-fast.so
+7ff24bfb0000-7ff24c1d9000 r-xp 00000000 00:00 0                          /lib/x86_64-linux-gnu/ld-2.27.so
+7ffd5f1cc000-7ffd5f1ed000 rw-p 00000000 00:00 0                          [stack]

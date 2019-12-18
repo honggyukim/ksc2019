@@ -1,0 +1,2590 @@
+E: enum uftrace_trace_type {TRACE_ERROR=-1,TRACE_NONE,TRACE_MCOUNT,TRACE_CYGPROF,TRACE_FENTRY}
+E: enum uftrace_pattern_type {PATT_NONE,PATT_SIMPLE,PATT_REGEX,PATT_GLOB}
+E: enum uftrace_cpu_arch {UFT_CPU_NONE,UFT_CPU_X86_64,UFT_CPU_ARM,UFT_CPU_AARCH64,UFT_CPU_I386}
+E: enum script_type_t {SCRIPT_UNKNOWN,SCRIPT_PYTHON,SCRIPT_LUAJIT,SCRIPT_TYPE_COUNT}
+E: enum pevent_func_arg_type {PEVENT_FUNC_ARG_VOID,PEVENT_FUNC_ARG_INT,PEVENT_FUNC_ARG_LONG,PEVENT_FUNC_ARG_STRING,PEVENT_FUNC_ARG_PTR,PEVENT_FUNC_ARG_MAX_TYPES}
+E: enum pevent_errno {__PEVENT_ERRNO__START=-100000,PEVENT_ERRNO__MEM_ALLOC_FAILED,PEVENT_ERRNO__PARSE_EVENT_FAILED,PEVENT_ERRNO__READ_ID_FAILED,PEVENT_ERRNO__READ_FORMAT_FAILED,PEVENT_ERRNO__READ_PRINT_FAILED,PEVENT_ERRNO__OLD_FTRACE_ARG_FAILED,PEVENT_ERRNO__INVALID_ARG_TYPE,PEVENT_ERRNO__INVALID_EXP_TYPE,PEVENT_ERRNO__INVALID_OP_TYPE,PEVENT_ERRNO__INVALID_EVENT_NAME,PEVENT_ERRNO__EVENT_NOT_FOUND,PEVENT_ERRNO__SYNTAX_ERROR,PEVENT_ERRNO__ILLEGAL_RVALUE,PEVENT_ERRNO__ILLEGAL_LVALUE,PEVENT_ERRNO__INVALID_REGEX,PEVENT_ERRNO__ILLEGAL_STRING_CMP,PEVENT_ERRNO__ILLEGAL_INTEGER_CMP,PEVENT_ERRNO__REPARENT_NOT_OP,PEVENT_ERRNO__REPARENT_FAILED,PEVENT_ERRNO__BAD_FILTER_ARG,PEVENT_ERRNO__UNEXPECTED_TYPE,PEVENT_ERRNO__ILLEGAL_TOKEN,PEVENT_ERRNO__INVALID_PAREN,PEVENT_ERRNO__UNBALANCED_PAREN,PEVENT_ERRNO__UNKNOWN_TOKEN,PEVENT_ERRNO__FILTER_NOT_FOUND,PEVENT_ERRNO__NOT_A_NUMBER,PEVENT_ERRNO__NO_FILTER,PEVENT_ERRNO__FILTER_MISS,__PEVENT_ERRNO__END,PEVENT_ERRNO__SUCCESS=0,PEVENT_ERRNO__FILTER_MATCH=0}
+E: enum kbuffer_long_size {KBUFFER_LSIZE_4,KBUFFER_LSIZE_8}
+E: enum kbuffer_endian {KBUFFER_ENDIAN_BIG,KBUFFER_ENDIAN_LITTLE}
+E: enum filter_mode {FILTER_MODE_NONE,FILTER_MODE_IN,FILTER_MODE_OUT}
+E: enum event_type {EVENT_ERROR,EVENT_NONE,EVENT_SPACE,EVENT_NEWLINE,EVENT_OP,EVENT_DELIM,EVENT_ITEM,EVENT_DQUOTE,EVENT_SQUOTE}
+E: enum event_sort_type {EVENT_SORT_ID,EVENT_SORT_NAME,EVENT_SORT_SYSTEM}
+E: enum enum_token_ret {TOKEN_INVALID=-1,TOKEN_NULL,TOKEN_STR,TOKEN_SIGN,TOKEN_NUM}
+E: enum color_setting {COLOR_UNKNOWN,COLOR_AUTO,COLOR_OFF,COLOR_ON}
+E: enum argspec_string_bits {NEEDS_PAREN_BIT,NEEDS_SEMI_COLON_BIT,NEEDS_PAREN=1,HAS_MORE_BIT,NEEDS_SEMI_COLON=2,IS_RETVAL_BIT,NEEDS_ASSIGNMENT_BIT,HAS_MORE=4,NEEDS_JSON_BIT,IS_RETVAL=8,NEEDS_ASSIGNMENT=16,NEEDS_JSON=32}
+F: 5360 dd_function_param
+L: 487 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 5521 dd_unresolved_type
+L: 602 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+F: 5593 dd_base_unresolved_name
+L: 634 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 56bc dd_unresolved_name
+L: 657 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 58a4 dd_simple_id
+L: 584 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 5930 main
+L: 1081 /home/honggyu/work/uftrace/git/uftrace/uftrace.c
+A: @arg1%rdi,arg2/p%rsi
+R: @retval
+F: 5f90 parse_size
+L: 196 /home/honggyu/work/uftrace/git/uftrace/uftrace.c
+A: @arg1/s%rdi
+R: @retval
+F: 6050 parse_opt_file
+L: 885 /home/honggyu/work/uftrace/git/uftrace/uftrace.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4/p%rcx
+F: 6280 apply_default_opts
+L: 1051 /home/honggyu/work/uftrace/git/uftrace/uftrace.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 6410 parse_any_timestamp
+L: 354 /home/honggyu/work/uftrace/git/uftrace/uftrace.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 6520 parse_option
+L: 398 /home/honggyu/work/uftrace/git/uftrace/uftrace.c
+A: @arg1%rdi,arg2/s%rsi,arg3/p%rdx
+R: @retval
+F: 7a90 parse_script_opt
+L: 956 /home/honggyu/work/uftrace/git/uftrace/uftrace.c
+A: @arg1/p%rdi
+F: 7cf0 adjust_fg_time
+L: 1029 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 7d50 dump_raw_perf_start
+L: 777 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 7d90 dump_raw_kernel_start
+L: 658 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 7db0 print_graph_to_graphviz
+L: 1231 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 7e60 dump_chrome_perf_event
+L: 950 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 7ee0 pr_hex
+L: 270 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 80d0 dump_raw_perf_event
+L: 790 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 8240 dump_raw_kernel_lost
+L: 770 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx,arg4%rcx
+F: 82b0 dump_raw_inverted_time
+L: 584 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 8310 dump_raw_cpu_start
+L: 664 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 8360 dump_raw_kernel_event
+L: 735 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx
+F: 8530 dump_raw_kernel_rstack
+L: 676 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx,arg5/s%r8
+F: 87f0 dump_raw_task_rstack
+L: 594 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+F: 8f50 dump_raw_task_start
+L: 573 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 8f90 dump_graphviz_footer
+L: 1254 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 8fe0 dump_graphviz_kernel_rstack
+L: 1209 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx,arg5/s%r8
+F: 9080 dump_graphviz_task_rstack
+L: 1191 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+F: 9110 dump_flame_kernel_rstack
+L: 1132 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx,arg5/s%r8
+F: 91b0 dump_flame_task_rstack
+L: 1114 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+F: 9240 dump_graphviz_header
+L: 1170 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 92f0 dump_flame_header
+L: 1107 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 9310 print_flame_graph
+L: 1072 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 94f0 dump_flame_footer
+L: 1154 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 9520 dump_chrome_footer
+L: 981 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 9680 dump_chrome_task_rstack
+L: 858 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+F: 99a0 dump_chrome_kernel_rstack
+L: 937 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx,arg5/s%r8
+F: 99e0 dump_chrome_header
+L: 827 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 9ab0 check_task_rstack
+L: 1401 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 9b00 dump_raw_task_event
+L: 634 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 9d20 dump_replay_event
+L: 1446 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 9fd0 do_dump_replay
+L: 1494 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: a2c0 dump_raw_header
+L: 537 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: ab10 command_dump
+L: 1579 /home/honggyu/work/uftrace/git/uftrace/cmds/dump.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: b330 print_task_tid
+L: 129 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi
+F: b350 pr_indent
+L: 407 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx
+F: b410 print_addr
+L: 64 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi
+F: b440 find_func
+L: 700 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: b4a0 print_task_self_time
+L: 119 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi
+F: b4d0 print_task_total_time
+L: 109 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi
+F: b4f0 print_self_time
+L: 54 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi
+F: b510 print_total_time
+L: 44 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi
+F: b530 setup_task_field
+L: 183 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: b580 setup_default_field
+L: 178 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: b5a0 print_task_node
+L: 802 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx,arg5/p%r8
+R: @retval
+F: b830 print_graph_node
+L: 433 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx,arg5%r8
+F: ba90 create_graph
+L: 210 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: bde0 get_task_graph
+L: 272 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx
+R: @retval/p
+F: c0e0 command_graph
+L: 906 /home/honggyu/work/uftrace/git/uftrace/cmds/graph.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: cdb0 fill_exit_status
+L: 183 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: cdd0 fill_uftrace_version
+L: 844 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: ce00 fill_pattern_type
+L: 812 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: ce40 fill_record_date
+L: 774 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: cec0 fill_arg_spec
+L: 692 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: d020 fill_loadinfo
+L: 654 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: d100 fill_usageinfo
+L: 589 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: d250 fill_taskinfo
+L: 496 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: d3e0 fill_osinfo
+L: 400 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: d590 fill_meminfo
+L: 334 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: d7c0 read_loadinfo
+L: 675 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: d850 read_usageinfo
+L: 613 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: daf0 read_exit_status
+L: 190 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: db70 fill_cpuinfo
+L: 267 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: dbe0 fill_cmdline
+L: 207 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: dd30 fill_exe_build_id
+L: 86 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: dfe0 fill_exe_name
+L: 56 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: e040 read_pattern_type
+L: 822 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: e0d0 read_taskinfo
+L: 530 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: e330 print_info
+L: 981 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: e400 build_tid_list
+L: 486 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: e460 copy_info_str
+L: 46 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/s%rdi
+F: e4c0 read_uftrace_version
+L: 851 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: e540 read_record_date
+L: 786 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: e610 read_arg_spec
+L: 723 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: e890 read_osinfo
+L: 444 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: ea50 read_meminfo
+L: 382 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: ead0 read_cmdline
+L: 249 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: eb50 read_exe_name
+L: 68 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: ebd0 read_cpuinfo
+L: 283 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: edd0 convert_to_int
+L: 138 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1%rdi
+F: ee40 read_exe_build_id
+L: 152 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+R: @retval
+F: ef50 fill_uftrace_info
+L: 874 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx,arg4%rcx,arg5/p%r8,arg6/s%r9
+F: f0d0 read_uftrace_info
+L: 923 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1%rdi,arg2/p%rsi
+R: @retval
+F: f1e0 clear_uftrace_info
+L: 961 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi
+F: f2a0 process_uftrace_info
+L: 990 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+F: fb10 command_info
+L: 1209 /home/honggyu/work/uftrace/git/uftrace/cmds/info.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: fec0 cleanup_tempdir
+L: 17 /home/honggyu/work/uftrace/git/uftrace/cmds/live.c
+F: fef0 sigsegv_handler
+L: 44 /home/honggyu/work/uftrace/git/uftrace/cmds/live.c
+A: @arg1%rdi
+F: ff40 command_live
+L: 98 /home/honggyu/work/uftrace/git/uftrace/cmds/live.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 10420 sigchld_handler
+L: 972 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+F: 10460 handle_pollfd
+L: 611 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx,arg5%r8,arg6%r9
+R: @retval
+F: 10580 start_tracing
+L: 1794 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 10790 filter_shmem
+L: 903 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi
+R: @retval
+F: 107c0 check_tid_list
+L: 1011 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+R: @retval
+F: 10950 filter_map
+L: 1284 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi
+R: @retval
+F: 109b0 filter_sym
+L: 1309 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi
+R: @retval
+F: 109f0 filter_dbg
+L: 1333 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi
+R: @retval
+F: 10a30 send_event_file
+L: 1395 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1%rdi,arg2/s%rsi
+F: 10ad0 is_regular_executable
+L: 1505 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/s%rdi
+R: @retval
+F: 10b40 add_tid_list
+L: 988 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1%rdi,arg2%rsi
+F: 10da0 writer_thread
+L: 655 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi
+R: @retval/p
+F: 11650 finish_writers
+L: 1915 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 11ef0 read_record_mmap
+L: 1065 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1%rdi,arg2/s%rsi,arg3%rdx
+F: 12960 stop_tracing
+L: 1840 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 12ba0 setup_writers
+L: 1701 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 12fc0 get_libmcount_path
+L: 97 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/p%rdi
+R: @retval/s
+F: 131e0 put_libmcount_path
+L: 147 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1/s%rdi
+F: 131f0 do_main_loop
+L: 2007 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 13a60 do_child_exec
+L: 2068 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx
+R: @retval
+F: 144e0 command_record
+L: 2130 /home/honggyu/work/uftrace/git/uftrace/cmds/record.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 14d90 recv_trace_end
+L: 482 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2%rsi
+F: 14e70 write_client_file
+L: 285 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+F: 150d0 setup_client_socket
+L: 77 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1/p%rdi
+R: @retval
+F: 15200 send_trace_dir_name
+L: 105 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2/s%rsi
+F: 152c0 send_trace_data
+L: 123 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2%rsi,arg3/p%rdx,arg4%rcx
+F: 15390 send_trace_kernel_data
+L: 142 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2%rsi,arg3/p%rdx,arg4%rcx
+F: 15460 send_trace_perf_data
+L: 161 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2%rsi,arg3/p%rdx,arg4%rcx
+F: 15530 send_trace_metadata
+L: 180 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2/s%rsi,arg3/s%rdx
+F: 15820 send_trace_info
+L: 233 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx
+F: 15920 send_trace_end
+L: 258 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi
+F: 159c0 command_recv
+L: 605 /home/honggyu/work/uftrace/git/uftrace/cmds/recv.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 16bc0 print_task
+L: 88 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 16bf0 print_timestamp
+L: 59 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 16c40 print_tid
+L: 40 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 16c60 print_elapsed
+L: 80 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 16c90 print_timedelta
+L: 69 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 16cc0 print_duration
+L: 27 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 16cf0 setup_default_field
+L: 224 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 16d80 print_task_newline
+L: 430 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1%rdi
+F: 16df0 print_event
+L: 282 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 17160 print_field
+L: 211 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 171d0 print_addr
+L: 47 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 17220 print_module
+L: 96 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi
+F: 17380 get_argspec_string
+L: 475 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4/e:argspec_string_bits%rcx
+F: 183d0 command_replay
+L: 1127 /home/honggyu/work/uftrace/git/uftrace/cmds/replay.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 19490 print_thread
+L: 319 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 19540 print_function_diff
+L: 410 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 19990 print_function
+L: 189 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 19a80 insert_node
+L: 25 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+F: 19b10 find_insert_node
+L: 36 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+F: 19b70 build_function_tree
+L: 108 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 19f10 convert_sort_keys
+L: 601 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1/s%rdi
+R: @retval/s
+F: 1a140 command_report
+L: 639 /home/honggyu/work/uftrace/git/uftrace/cmds/report.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 1acd0 command_script
+L: 132 /home/honggyu/work/uftrace/git/uftrace/cmds/script.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 1b210 tui_last_index
+L: 564 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+R: @retval
+F: 1b270 tui_window_init
+L: 582 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1b2c0 graph_prev_node
+L: 733 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/p
+F: 1b390 graph_next_node
+L: 781 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/p
+F: 1b4b0 win_top_graph
+L: 831 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 1b4d0 win_needs_blank_graph
+L: 878 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 1b4f0 win_sibling_prev_graph
+L: 883 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 1b530 win_sibling_next_graph
+L: 897 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 1b570 win_parent_graph
+L: 912 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1b580 win_enter_graph
+L: 918 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 1b5d0 win_needs_blank_no
+L: 1259 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 1b5e0 win_sibling_prev_no
+L: 1264 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 1b600 win_sibling_next_no
+L: 1269 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 1b620 win_parent_no
+L: 1274 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 1b630 win_top_list
+L: 1426 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 1b640 win_prev_list
+L: 1433 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval/p
+F: 1b660 win_next_list
+L: 1443 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval/p
+F: 1b680 tui_window_move_up
+L: 1713 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+F: 1b700 tui_window_set_middle_prev
+L: 1971 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1b7c0 tui_window_search_count
+L: 2109 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+F: 1b850 print_graph_addr
+L: 231 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+F: 1b880 print_graph_indent
+L: 1119 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+F: 1b940 win_header_report
+L: 1333 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1ba40 win_display_info
+L: 1514 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1ba70 win_header_info
+L: 1496 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1baa0 win_header_session
+L: 1579 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1bad0 print_time
+L: 180 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1%rdi
+F: 1bc70 print_graph_self
+L: 221 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+F: 1bc90 print_graph_total
+L: 211 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+F: 1bcb0 win_display_report
+L: 1376 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1bd40 setup_default_graph_field
+L: 283 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1bd60 win_location_graph
+L: 1229 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 1bd80 win_location_report
+L: 1392 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 1bde0 win_search_graph
+L: 1194 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+R: @retval
+F: 1be00 win_search_report
+L: 1326 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+R: @retval
+F: 1be20 win_display_graph
+L: 1141 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1c070 win_header_graph
+L: 979 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1c220 win_footer
+L: 1029 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 1c330 win_footer_graph
+L: 1045 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1c4e0 win_footer_info
+L: 1506 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1c560 win_footer_session
+L: 1585 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1c630 win_footer_report
+L: 1344 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1c770 win_top_report
+L: 1296 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 1c790 win_next_report
+L: 1315 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval/p
+F: 1c7c0 win_prev_report
+L: 1304 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval/p
+F: 1c7f0 build_info_node
+L: 1454 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 1c970 tui_window_help
+L: 2291 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+F: 1cac0 tui_cleanup
+L: 326 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+F: 1cb50 win_prev_graph
+L: 842 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 1cbc0 win_next_graph
+L: 856 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 1cd30 win_collapse_graph
+L: 961 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+R: @retval
+F: 1cd80 win_expand_graph
+L: 970 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+R: @retval
+F: 1cdd0 tui_window_move_down
+L: 1733 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+F: 1ce90 win_longest_child_graph
+L: 1201 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 1cf60 tui_window_set_middle_next
+L: 1991 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1d080 tui_window_search_next
+L: 2149 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi
+F: 1d100 create_data
+L: 301 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1d2b0 win_display_session
+L: 1630 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1d4c0 append_graph_node
+L: 517 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+F: 1d580 copy_graph_node
+L: 533 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1d660 build_partial_graph
+L: 650 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1d8d0 win_enter_session
+L: 1666 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 1d9a0 command_tui
+L: 2598 /home/honggyu/work/uftrace/git/uftrace/cmds/tui.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 1f890 find_dwarf_argspec
+L: 147 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx
+R: @retval/p
+F: 1fa40 find_auto_args
+L: 121 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 1fa90 build_auto_args
+L: 66 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx
+F: 1fdb0 release_auto_args
+L: 250 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi
+F: 1fe70 enum_next_token
+L: 385 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi
+R: @retval/e:enum_token_ret
+F: 20010 find_auto_argspec
+L: 190 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+R: @retval/p
+F: 20070 find_auto_retspec
+L: 206 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+R: @retval/p
+F: 200e0 get_auto_argspec_str
+L: 222 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+R: @retval/s
+F: 200f0 get_auto_retspec_str
+L: 227 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+R: @retval/s
+F: 20100 extract_trigger_args
+L: 310 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+R: @retval
+F: 204d0 find_enum_def
+L: 491 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 20530 convert_enum_val
+L: 514 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/s
+F: 20720 get_enum_string
+L: 555 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+R: @retval/s
+F: 207d0 parse_enum_string
+L: 590 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/s%rdi,arg2/p%rsi
+R: @retval
+F: 20ce0 setup_auto_args
+L: 232 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi
+F: 20d40 setup_auto_args_str
+L: 242 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/s%rdi,arg2/s%rsi,arg3/s%rdx,arg4/p%rcx
+F: 20da0 save_enum_def
+L: 722 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 20f00 release_enum_def
+L: 740 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+A: @arg1/p%rdi
+F: 20f60 finish_auto_args
+L: 273 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+F: 21010 get_auto_enum_str
+L: 755 /home/honggyu/work/uftrace/git/uftrace/utils/auto-args.c
+R: @retval/s
+F: 21100 read_task_file
+L: 37 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4%rcx,arg5%r8
+R: @retval
+F: 21360 read_task_txt_file
+L: 112 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4%rcx,arg5%r8
+R: @retval
+F: 21820 read_events_file
+L: 232 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/p%rdi
+R: @retval
+F: 21a90 write_task_info
+L: 283 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 21bf0 write_fork_info
+L: 303 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 21d50 write_session_info
+L: 323 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/s%rdx
+F: 21ec0 write_dlopen_info
+L: 344 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/s%rdx
+F: 22030 data_is_lp64
+L: 410 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/p%rdi
+F: 22050 open_info_file
+L: 414 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 22460 close_data_file
+L: 650 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 22510 open_data_file
+L: 502 /home/honggyu/work/uftrace/git/uftrace/utils/data-file.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 22960 check_busybox
+L: 78 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/s%rdi
+R: @retval
+F: 22ad0 setup_color
+L: 114 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/e:color_setting%rdi,arg2/s%rsi
+F: 22c90 __pr_dbg
+L: 149 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/s%rdi
+F: 22d90 color
+L: 59 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 22e60 __pr_err
+L: 162 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/s%rdi
+F: 22f50 __pr_err_s
+L: 177 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/s%rdi
+F: 23070 __pr_warn
+L: 196 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/s%rdi
+F: 23170 __pr_out
+L: 209 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/s%rdi
+F: 23240 __print_time_unit
+L: 238 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1%rdi,arg2%rsi
+F: 23510 __pr_color
+L: 218 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1/c%rdi,arg2/s%rsi
+F: 23640 print_time_unit
+L: 320 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1%rdi
+F: 23660 print_diff_percent
+L: 325 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1%rdi,arg2%rsi
+F: 237d0 print_diff_time_unit
+L: 359 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1%rdi,arg2%rsi
+F: 23810 print_diff_count
+L: 367 /home/honggyu/work/uftrace/git/uftrace/utils/debug.c
+A: @arg1%rdi,arg2%rsi
+F: 238c0 dd_debug_print
+L: 154 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+F: 23a20 dd_seq_id
+L: 367 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 23a90 dd_number
+L: 343 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 23b70 dd_call_offset
+L: 380 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 23d90 dd_qualifier
+L: 408 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+F: 23e40 dd_template_param
+L: 514 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+F: 23f40 dd_append_len
+L: 316 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+F: 23fe0 dd_append
+L: 329 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval
+F: 24010 dd_source_name
+L: 1380 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 242a0 dd_abi_tag
+L: 445 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+F: 24330 dd_substitution
+L: 457 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 244e0 dd_expression
+L: 759 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 24f00 dd_expr_list
+L: 742 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+F: 24f90 dd_decltype
+L: 973 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 25100 dd_type
+L: 1023 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 25b90 dd_ctor_dtor_name
+L: 1285 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 25de0 dd_operator_name
+L: 1336 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 25fe0 dd_unqualified_name
+L: 1458 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 26430 dd_template_arg
+L: 526 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 265f0 dd_template_args
+L: 564 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+F: 26700 dd_name
+L: 1606 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 26e20 dd_encoding
+L: 1631 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 275a0 dd_expr_primary
+L: 704 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/p%rdi
+R: @retval
+F: 277a0 demangle_simple
+L: 1666 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/s%rdi
+R: @retval/s
+F: 27a10 demangle
+L: 1742 /home/honggyu/work/uftrace/git/uftrace/utils/demangle.c
+A: @arg1/s%rdi
+R: @retval/s
+F: 27bc0 find_debug_entry
+L: 85 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 27c30 find_last_component
+L: 808 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/s%rdi
+R: @retval/s
+F: 27d50 get_debug_file
+L: 128 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 27e60 add_debug_entry
+L: 45 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4/s%rcx
+R: @retval
+F: 27fe0 free_debug_entry
+L: 112 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi
+F: 28040 get_attr
+L: 222 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx,arg4/p%rcx
+F: 289e0 get_dwarfspecs_cb
+L: 915 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 293e0 debug_info_has_argspec
+L: 20 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi
+R: @retval
+F: 29420 debug_info_has_location
+L: 30 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi
+F: 29450 prepare_debug_info
+L: 1142 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/e:uftrace_pattern_type%rsi,arg3/s%rdx,arg4/s%rcx,arg5%r8,arg6%r9
+F: 29bf0 finish_debug_info
+L: 1187 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi
+F: 29ce0 save_debug_file
+L: 1234 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/c%rsi,arg3/s%rdx,arg4%rcx
+F: 29db0 save_debug_info
+L: 1299 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 2a010 load_debug_info
+L: 1424 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2%rsi
+F: 2a420 get_dwarf_argspec
+L: 1444 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+R: @retval/s
+F: 2a450 get_dwarf_retspec
+L: 1451 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+R: @retval/s
+F: 2a480 find_file_line
+L: 1458 /home/honggyu/work/uftrace/git/uftrace/utils/dwarf.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 2a4e0 setup_extern_data
+L: 28 /home/honggyu/work/uftrace/git/uftrace/utils/extern.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2a640 read_extern_data
+L: 61 /home/honggyu/work/uftrace/git/uftrace/utils/extern.c
+A: @arg1/p%rdi
+R: @retval
+F: 2a780 get_extern_record
+L: 103 /home/honggyu/work/uftrace/git/uftrace/utils/extern.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval/p
+F: 2a7c0 finish_extern_data
+L: 115 /home/honggyu/work/uftrace/git/uftrace/utils/extern.c
+A: @arg1/p%rdi
+R: @retval
+F: 2a810 print_header
+L: 5 /home/honggyu/work/uftrace/git/uftrace/utils/field.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/s%rdx,arg4%rcx
+F: 2a890 print_field_data
+L: 24 /home/honggyu/work/uftrace/git/uftrace/utils/field.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 2a900 print_empty_field
+L: 39 /home/honggyu/work/uftrace/git/uftrace/utils/field.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 2a970 add_field
+L: 53 /home/honggyu/work/uftrace/git/uftrace/utils/field.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 2a9d0 setup_field
+L: 74 /home/honggyu/work/uftrace/git/uftrace/utils/field.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx,arg5%r8
+F: 2ac40 parse_backtrace_action
+L: 791 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2ac50 parse_recover_action
+L: 798 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2ac70 parse_finish_action
+L: 805 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2ac90 parse_filter_action
+L: 812 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2acb0 parse_notrace_action
+L: 820 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2acd0 parse_auto_args_action
+L: 828 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2acf0 parse_caller_action
+L: 835 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2ad10 parse_read_action
+L: 719 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2add0 parse_color_action
+L: 742 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2aef0 parse_trace_action
+L: 772 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2af90 parse_time_action
+L: 711 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2afd0 parse_depth_action
+L: 698 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2b030 parse_float_argument_spec
+L: 641 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2b220 check_so_cb
+L: 432 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx
+R: @retval
+F: 2b6b0 parse_argument_spec
+L: 588 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2b7d0 parse_retval_spec
+L: 617 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx
+F: 2b880 print_trigger
+L: 41 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi
+F: 2be10 uftrace_count_filter
+L: 107 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 2be60 uftrace_match_filter
+L: 136 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/p
+F: 2bf30 free_arg_spec
+L: 223 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi
+F: 2bf70 add_trigger
+L: 230 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 2c1e0 init_filter_pattern
+L: 358 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/e:uftrace_pattern_type%rdi,arg2/p%rsi,arg3/s%rdx
+F: 2c2e0 match_filter_pattern
+L: 379 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 2c340 add_trigger_entry
+L: 920 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx,arg5/p%r8
+R: @retval
+F: 2c830 free_filter_pattern
+L: 392 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi
+F: 2c880 parse_filter_pattern
+L: 403 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi
+R: @retval/e:uftrace_pattern_type
+F: 2c8f0 get_filter_pattern
+L: 415 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/e:uftrace_pattern_type%rdi
+R: @retval/s
+F: 2c950 setup_trigger_action
+L: 867 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx,arg5/p%r8
+R: @retval
+F: 2cb60 setup_trigger
+L: 953 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx,arg5/e:filter_mode%r8,arg6/p%r9
+F: 2d040 uftrace_setup_filter
+L: 1069 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4/e:filter_mode%rcx,arg5/p%r8
+F: 2d060 uftrace_setup_trigger
+L: 1085 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4/e:filter_mode%rcx,arg5/p%r8
+F: 2d080 uftrace_setup_argument
+L: 1099 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+F: 2d0b0 uftrace_setup_retval
+L: 1118 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+F: 2d0e0 uftrace_setup_caller_filter
+L: 1137 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+F: 2d100 uftrace_cleanup_filter
+L: 1149 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi
+F: 2d1a0 uftrace_print_filter
+L: 1173 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/p%rdi
+F: 2d210 uftrace_clear_kernel
+L: 1188 /home/honggyu/work/uftrace/git/uftrace/utils/filter.c
+A: @arg1/s%rdi
+R: @retval/s
+F: 2d430 update_first_timestamp
+L: 124 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 2d4a0 build_ret_spec
+L: 368 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2d4d0 build_arg_spec
+L: 357 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2d500 setup_callers
+L: 235 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2d530 setup_trigger
+L: 226 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2d560 build_fixup_filter
+L: 328 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2d620 count_filters
+L: 244 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2d660 setup_filters
+L: 217 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2d690 __read_task_ustack
+L: 1020 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2d870 save_task_event
+L: 1156 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 2d950 get_task_handle
+L: 31 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2%rsi
+F: 2d9b0 fstack_setup_task
+L: 150 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 2deb0 setup_fstack_args
+L: 390 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/s%rdi,arg2/s%rsi,arg3/p%rdx,arg4/p%rcx
+F: 2df80 fstack_setup_filters
+L: 419 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2e270 fstack_entry
+L: 462 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2e610 fstack_exit
+L: 585 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2e6d0 fstack_update
+L: 614 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 2e830 fstack_check_filter
+L: 818 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+R: @retval
+F: 2ea70 fstack_check_opts
+L: 878 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 2eb10 setup_rstack_list
+L: 907 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2eb40 add_to_rstack_list
+L: 913 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 2ec70 get_first_rstack_list
+L: 940 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2ec90 consume_first_rstack_list
+L: 950 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2ed10 __fstack_consume
+L: 1904 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 2f660 delete_last_rstack_list
+L: 965 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2f6f0 reset_rstack_list
+L: 980 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2f770 reset_task_handle
+L: 68 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi
+F: 2f850 read_task_args
+L: 1090 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 2fba0 get_event_name
+L: 1182 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/s
+F: 300e0 read_task_event
+L: 1287 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 30280 read_task_ustack
+L: 1398 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 303c0 __read_rstack
+L: 2045 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 30d20 fstack_consume
+L: 2000 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 30e40 fstack_skip
+L: 737 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx
+R: @retval/p
+F: 31250 read_rstack
+L: 2210 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 31270 peek_rstack
+L: 2232 /home/honggyu/work/uftrace/git/uftrace/utils/fstack.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 31290 add_graph_exit
+L: 136 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi
+R: @retval
+F: 31410 add_graph_entry
+L: 60 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+R: @retval
+F: 31710 graph_destroy_node
+L: 216 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi
+F: 31790 graph_init
+L: 13 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 317f0 graph_init_callbacks
+L: 22 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+F: 31820 graph_get_task
+L: 31 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 318f0 graph_add_node
+L: 203 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi,arg2%rsi,arg3/s%rdx,arg4%rcx
+R: @retval
+F: 319d0 graph_destroy
+L: 228 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+A: @arg1/p%rdi
+F: 31a60 graph_remove_task
+L: 242 /home/honggyu/work/uftrace/git/uftrace/utils/graph.c
+F: 31ac0 generic_event_handler
+L: 1457 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+R: @retval
+F: 31b10 check_and_add_list
+L: 545 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx
+F: 31c70 scandir_filter
+L: 1176 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi
+R: @retval
+F: 31ca0 __write_tracing_file
+L: 90 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1%rdi,arg2/s%rsi,arg3/s%rdx,arg4%rcx,arg5%r8
+R: @retval
+F: 31e90 funcgraph_exit_handler
+L: 1434 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+R: @retval
+F: 31f90 funcgraph_entry_handler
+L: 1411 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx
+R: @retval
+F: 32080 prepare_kbuffer
+L: 1329 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 32160 get_tracing_file
+L: 53 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/s%rdi
+F: 321e0 add_single_filter
+L: 282 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 32260 add_pattern_filter
+L: 290 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 323d0 add_single_event
+L: 387 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 32450 add_pattern_event
+L: 395 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 32710 open_tracing_file
+L: 66 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/s%rdi,arg2%rsi
+F: 327c0 append_tracing_file
+L: 152 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/s%rdi,arg2/s%rsi
+R: @retval
+F: 32820 write_tracing_file
+L: 138 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/s%rdi,arg2/s%rsi
+R: @retval
+F: 32880 reset_tracing_files
+L: 450 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+R: @retval
+F: 329b0 set_filter_file
+L: 189 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/s%rdi,arg2/p%rsi
+R: @retval
+F: 32bd0 save_kernel_file
+L: 898 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval
+F: 32f60 check_kernel_pid_filter
+L: 260 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+R: @retval
+F: 32fa0 setup_kernel_tracing
+L: 620 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 335f0 start_kernel_tracing
+L: 679 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi
+R: @retval
+F: 33890 record_kernel_trace_pipe
+L: 750 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx
+F: 338c0 record_kernel_tracing
+L: 786 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi
+R: @retval
+F: 33990 stop_kernel_tracing
+L: 814 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi
+R: @retval
+F: 339c0 finish_kernel_tracing
+L: 829 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi
+R: @retval
+F: 33bd0 list_kernel_events
+L: 856 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+F: 33ca0 finish_kernel_data
+L: 1291 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi
+R: @retval
+F: 33dd0 setup_kernel_data
+L: 1189 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi
+R: @retval
+F: 34890 read_kernel_cpu_data
+L: 1481 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 34b70 read_kernel_event
+L: 1726 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx
+R: @retval/p
+F: 34ba0 read_kernel_stack
+L: 1752 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 35370 get_kernel_record
+L: 1812 /home/honggyu/work/uftrace/git/uftrace/utils/kernel.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval/p
+F: 353f0 wait_for_pager
+L: 64 /home/honggyu/work/uftrace/git/uftrace/utils/pager.c
+F: 35470 setup_pager
+L: 78 /home/honggyu/work/uftrace/git/uftrace/utils/pager.c
+R: @retval/s
+F: 35510 start_pager
+L: 96 /home/honggyu/work/uftrace/git/uftrace/utils/pager.c
+A: @arg1/s%rdi
+F: 35a00 finish_perf_record
+L: 134 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi
+F: 35ad0 setup_perf_record
+L: 66 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx,arg4/s%rcx,arg5%r8
+R: @retval
+F: 35e60 record_perf_data
+L: 167 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx
+F: 36050 setup_perf_data
+L: 244 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi
+R: @retval
+F: 36220 finish_perf_data
+L: 287 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi
+F: 362a0 read_perf_data
+L: 421 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi
+R: @retval
+F: 36350 get_perf_record
+L: 463 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 364c0 update_perf_task_comm
+L: 504 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi
+F: 365b0 process_perf_event
+L: 554 /home/honggyu/work/uftrace/git/uftrace/utils/perf.c
+A: @arg1/p%rdi
+F: 367a0 __rb_rotate_left
+L: 25 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 36830 __rb_rotate_right
+L: 48 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 368c0 rb_insert_color
+L: 71 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 369e0 rb_erase
+L: 216 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 36d10 rb_first
+L: 286 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi
+R: @retval/p
+F: 36d40 rb_last
+L: 298 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi
+R: @retval/p
+F: 36d70 rb_next
+L: 310 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi
+R: @retval/p
+F: 36dd0 rb_prev
+L: 338 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi
+R: @retval/p
+F: 36e30 rb_replace_node
+L: 362 /home/honggyu/work/uftrace/git/uftrace/utils/rbtree.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 36ea0 arch_register_index
+L: 83 /home/honggyu/work/uftrace/git/uftrace/utils/regs.c
+A: @arg1/e:uftrace_cpu_arch%rdi,arg2/s%rsi
+R: @retval
+F: 36f50 arch_register_dwarf_name
+L: 178 /home/honggyu/work/uftrace/git/uftrace/utils/regs.c
+A: @arg1/e:uftrace_cpu_arch%rdi,arg2%rsi
+R: @retval/s
+F: 36fc0 cmp_total
+L: 147 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 36ff0 cmp_total_avg
+L: 148 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 37020 cmp_total_min
+L: 149 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 37050 cmp_total_max
+L: 150 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 37080 cmp_self
+L: 151 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 370b0 cmp_self_avg
+L: 152 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 370e0 cmp_self_min
+L: 153 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 37110 cmp_self_max
+L: 154 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 37140 cmp_call
+L: 155 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 37170 task_cmp_total
+L: 567 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 371a0 task_cmp_self
+L: 568 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 371d0 task_cmp_func
+L: 569 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 37200 cmp_func
+L: 157 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 37220 cmp_diff_func
+L: 354 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 37240 cmp_task_tid
+L: 571 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 37260 insert_diff
+L: 433 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 37330 cmp_task_name
+L: 584 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 373d0 cmp_diff_total
+L: 344 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 375a0 cmp_diff_total_avg
+L: 345 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 37770 cmp_diff_total_min
+L: 346 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 37940 cmp_diff_total_max
+L: 347 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 37b10 cmp_diff_self
+L: 348 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 37ce0 cmp_diff_self_avg
+L: 349 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 37eb0 cmp_diff_self_min
+L: 350 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 38080 cmp_diff_self_max
+L: 351 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 38250 cmp_diff_call
+L: 352 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 38420 find_or_create_node
+L: 36 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/p%rdx
+F: 38520 report_find_node
+L: 72 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 38540 report_add_node
+L: 77 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/p%rdx
+F: 38550 report_delete_node
+L: 83 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 38590 report_update_node
+L: 90 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 38640 report_calc_avg
+L: 111 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi
+F: 386a0 report_setup_sort
+L: 185 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/s%rdi
+R: @retval
+F: 387e0 report_sort_nodes
+L: 252 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 38900 report_setup_diff
+L: 385 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/s%rdi
+R: @retval
+F: 38a40 report_diff_nodes
+L: 454 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx
+F: 38bd0 destroy_diff_nodes
+L: 501 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi
+F: 38c20 apply_diff_policy
+L: 516 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/s%rdi
+F: 38d70 report_setup_task
+L: 616 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/s%rdi
+R: @retval
+F: 38ec0 report_sort_tasks
+L: 685 /home/honggyu/work/uftrace/git/uftrace/utils/report.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 38ff0 get_script_type
+L: 39 /home/honggyu/work/uftrace/git/uftrace/utils/script.c
+A: @arg1/s%rdi
+R: @retval/e:script_type_t
+F: 39050 script_add_filter
+L: 55 /home/honggyu/work/uftrace/git/uftrace/utils/script.c
+A: @arg1/s%rdi,arg2/e:uftrace_pattern_type%rsi
+F: 39100 script_match_filter
+L: 73 /home/honggyu/work/uftrace/git/uftrace/utils/script.c
+A: @arg1/s%rdi
+R: @retval
+F: 39160 script_finish_filter
+L: 88 /home/honggyu/work/uftrace/git/uftrace/utils/script.c
+F: 391c0 script_init
+L: 98 /home/honggyu/work/uftrace/git/uftrace/utils/script.c
+A: @arg1/p%rdi,arg2/e:uftrace_pattern_type%rsi
+R: @retval
+F: 392c0 script_finish
+L: 133 /home/honggyu/work/uftrace/git/uftrace/utils/script.c
+F: 39310 setup_common_context
+L: 48 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+A: @arg1/p%rdi
+F: 39480 luajit_atfork_prepare
+L: 310 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+R: @retval
+F: 39490 luajit_uftrace_end
+L: 294 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+R: @retval
+F: 39550 setup_argument_context
+L: 71 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+A: @arg1%rdi,arg2/p%rsi
+F: 39a30 luajit_uftrace_exit
+L: 270 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+A: @arg1/p%rdi
+R: @retval
+F: 39b20 luajit_uftrace_entry
+L: 247 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+A: @arg1/p%rdi
+R: @retval
+F: 39c10 script_init_for_luajit
+L: 361 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+A: @arg1/p%rdi,arg2/e:uftrace_pattern_type%rsi
+R: @retval
+F: 3a430 script_finish_for_luajit
+L: 399 /home/honggyu/work/uftrace/git/uftrace/utils/script-luajit.c
+F: 3a470 python_insert_dict
+L: 273 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi,arg2/c%rsi,arg3/s%rdx,arg4%rcx
+F: 3a570 setup_common_context
+L: 351 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 3a600 python_insert_tuple
+L: 246 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi,arg2/c%rsi,arg3%rdx,arg4%rcx
+F: 3a6b0 python_uftrace_end
+L: 615 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+R: @retval
+F: 3a730 python_atfork_prepare
+L: 637 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+R: @retval
+F: 3a780 set_python_path
+L: 189 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/s%rdi
+R: @retval
+F: 3a8c0 get_python_callback
+L: 651 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/s%rdi
+F: 3a960 setup_argument_context
+L: 360 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx
+F: 3adf0 python_uftrace_entry
+L: 534 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi
+R: @retval
+F: 3af20 python_uftrace_exit
+L: 573 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi
+R: @retval
+F: 3b070 python_uftrace_begin
+L: 497 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi
+R: @retval
+F: 3b1f0 script_init_for_python
+L: 669 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+A: @arg1/p%rdi,arg2/e:uftrace_pattern_type%rsi
+R: @retval
+F: 3bad0 script_finish_for_python
+L: 730 /home/honggyu/work/uftrace/git/uftrace/utils/script-python.c
+F: 3bb30 add_session_ref
+L: 371 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 3bc10 read_session_map
+L: 28 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/s%rdx
+F: 3bec0 delete_session_map
+L: 102 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi
+F: 3bf10 create_session
+L: 130 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4/s%rcx,arg5%r8,arg6%r9,arg7
+F: 3c170 walk_sessions
+L: 231 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 3c1d0 get_session_from_sid
+L: 255 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 3c230 session_add_dlopen
+L: 282 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx,arg4/s%rcx
+F: 3c2f0 session_find_dlsym
+L: 309 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2%rsi,arg3%rdx
+R: @retval/p
+F: 3c360 delete_session
+L: 330 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi
+F: 3c410 delete_sessions
+L: 353 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi
+F: 3c4b0 find_task_session
+L: 405 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+R: @retval/p
+F: 3c540 create_task
+L: 444 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 3c860 find_task
+L: 541 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2%rsi
+F: 3c8b0 walk_tasks
+L: 571 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 3c910 task_find_sym
+L: 595 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/p
+F: 3c9c0 task_find_sym_addr
+L: 633 /home/honggyu/work/uftrace/git/uftrace/utils/session.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+R: @retval/p
+F: 3ca40 addrsort
+L: 45 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 3ca70 namesort
+L: 70 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 3ca90 is_symbol_end
+L: 177 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+F: 3d370 has_dependency
+L: 86 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi,arg2/s%rsi
+R: @retval
+F: 3d560 check_static_binary
+L: 119 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+R: @retval
+F: 3d650 check_script_file
+L: 142 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+R: @retval/s
+F: 3d760 load_elf_dynsymtab
+L: 487 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+R: @retval
+F: 3e160 check_trace_functions
+L: 770 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+R: @retval/e:uftrace_trace_type
+F: 3e4a0 find_map_by_name
+L: 834 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 3e530 load_module_symtab
+L: 1024 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 3f600 unload_module_symtabs
+L: 1056 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+F: 3f6a0 load_module_symtabs
+L: 1071 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi
+F: 3f7b0 save_module_symtabs
+L: 1201 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+F: 3fab0 save_kernel_symbol
+L: 1222 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+R: @retval
+F: 3fc00 load_kernel_symbol
+L: 1248 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+R: @retval
+F: 3fd00 get_kernel_symtab
+L: 1272 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+F: 3fd10 get_kernel_module
+L: 1276 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+R: @retval/p
+F: 3fd20 build_dynsym_idxlist
+L: 1281 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx
+F: 3fe40 destroy_dynsym_idxlist
+L: 1303 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi
+F: 3fe70 check_dynsym_idxlist
+L: 1310 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 3fec0 find_map
+L: 1322 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2%rsi
+F: 3ff00 find_symtabs
+L: 1351 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 40050 find_sym
+L: 1398 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 400e0 find_symname
+L: 1415 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 401a0 find_symbol_map
+L: 1335 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 40200 symbol_getname
+L: 1439 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/s
+F: 40280 symbol_putname
+L: 1452 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 402a0 symbol_getname_offset
+L: 1459 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/s
+F: 403b0 print_symtab
+L: 1474 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/p%rdi
+F: 404b0 guess_kernel_base
+L: 1504 /home/honggyu/work/uftrace/git/uftrace/utils/symbol.c
+A: @arg1/s%rdi
+R: @retval
+F: 40560 elf_init
+L: 14 /home/honggyu/work/uftrace/git/uftrace/utils/symbol-libelf.c
+A: @arg1/s%rdi,arg2/p%rsi
+R: @retval
+F: 40640 elf_finish
+L: 47 /home/honggyu/work/uftrace/git/uftrace/utils/symbol-libelf.c
+A: @arg1/p%rdi
+F: 40680 elf_get_secdata
+L: 59 /home/honggyu/work/uftrace/git/uftrace/utils/symbol-libelf.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 406b0 elf_read_secdata
+L: 65 /home/honggyu/work/uftrace/git/uftrace/utils/symbol-libelf.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx,arg5%r8
+F: 406d0 sighandler
+L: 22 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1%rdi
+F: 406f0 setargs
+L: 715 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi,arg2/p%rsi
+R: @retval
+F: 408e0 can_remove_directory
+L: 238 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi
+F: 40a90 setup_signal
+L: 27 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+F: 40ad0 read_all
+L: 34 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 40b40 pread_all
+L: 51 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+R: @retval
+F: 40bc0 fread_all
+L: 69 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx
+R: @retval
+F: 40c40 write_all
+L: 87 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 40cb0 writev_all
+L: 104 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1%rdi,arg2/p%rsi,arg3%rdx
+R: @retval
+F: 40da0 remove_directory
+L: 139 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi
+R: @retval
+F: 40f60 chown_directory
+L: 302 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi
+R: @retval
+F: 41100 read_exename
+L: 343 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+R: @retval/s
+F: 41170 check_time_range
+L: 359 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 411c0 parse_time
+L: 427 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi,arg2%rsi
+R: @retval
+F: 41510 parse_timestamp
+L: 484 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi
+R: @retval
+F: 41600 strjoin
+L: 534 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi,arg2/s%rsi,arg3/s%rdx
+F: 416e0 strv_split
+L: 561 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/s%rdx
+F: 41860 strv_copy
+L: 598 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx
+F: 41920 strv_append
+L: 616 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 419d0 strv_replace
+L: 634 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi,arg2%rsi,arg3/s%rdx
+F: 41a40 strv_join
+L: 649 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/s
+F: 41ab0 strv_free
+L: 667 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi
+F: 41b30 create_default_opts
+L: 245 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi
+R: @retval
+F: 41c30 create_directory
+L: 270 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi
+R: @retval
+F: 41d60 json_quote
+L: 685 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi,arg2/p%rsi
+R: @retval/s
+F: 41e30 parse_cmdline
+L: 789 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi,arg2/p%rsi
+R: @retval/p
+F: 41f00 free_parsed_cmdline
+L: 828 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/p%rdi
+F: 41f40 absolute_dirname
+L: 858 /home/honggyu/work/uftrace/git/uftrace/utils/utils.c
+A: @arg1/s%rdi,arg2/s%rsi
+R: @retval/s
+F: 41f70 arch_fill_cpuinfo_model
+L: 4 /home/honggyu/work/uftrace/git/uftrace/arch/x86_64/cpuinfo.c
+A: @arg1%rdi
+R: @retval
+F: 42040 arch_load_dynsymtab_noplt
+L: 20 /home/honggyu/work/uftrace/git/uftrace/arch/x86_64/symbol.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4%rcx
+R: @retval
+F: 425c0 mcount_arch_plthook_setup
+L: 102 /home/honggyu/work/uftrace/git/uftrace/arch/x86_64/symbol.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 426e0 mcount_arch_plthook_addr
+L: 123 /home/honggyu/work/uftrace/git/uftrace/arch/x86_64/symbol.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 42720 cmdline_cmp
+L: 141 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 42740 func_cmp
+L: 338 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 42760 printk_cmp
+L: 550 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 42780 events_id_cmp
+L: 4727 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 427b0 free_flag_sym
+L: 720 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 42800 free_arg
+L: 733 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 42920 free_handler
+L: 5115 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 42960 free_func_handle
+L: 5594 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 429b0 free_format_fields
+L: 5904 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 42a00 cmdline_init
+L: 159 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 42ab0 func_map_init
+L: 372 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 42b80 find_func
+L: 412 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 42c30 printk_map_init
+L: 562 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 42cd0 find_printk
+L: 594 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 42d80 events_system_cmp
+L: 4757 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 42de0 events_name_cmp
+L: 4740 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 42e40 find_func_handler
+L: 2721 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval/p
+F: 42ea0 remove_func_handler
+L: 2736 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 42f20 print_str_to_seq
+L: 3590 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4/s%rcx
+F: 42f50 get_event_fields
+L: 4822 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/s%rdi,arg2/s%rsi,arg3%rdx,arg4/p%rcx
+R: @retval/p
+F: 43080 get_op_prio
+L: 1729 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/s%rdi
+R: @retval
+F: 432d0 eval_type_str
+L: 2019 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1%rdi,arg2/s%rsi,arg3%rdx
+R: @retval
+F: 43500 find_cmdline
+L: 189 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+F: 435c0 extend_token
+L: 842 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+F: 43630 get_type
+L: 796 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1%rdi
+F: 436c0 __read_token
+L: 862 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval/e:event_type
+F: 43d00 read_token
+L: 1058 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval/e:event_type
+F: 43d40 force_token
+L: 1028 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/s%rdi,arg2/p%rsi
+R: @retval/e:event_type
+F: 43dc0 read_token_item
+L: 1099 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval/e:event_type
+F: 43e10 test_type_token
+L: 1128 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/e:event_type%rdi,arg2/s%rsi,arg3/e:event_type%rdx,arg4/s%rcx
+F: 43eb0 __read_expected
+L: 1159 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/e:event_type%rdi,arg2/s%rsi,arg3%rdx
+R: @retval
+F: 43f30 eval_flag
+L: 3572 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/s%rdi
+F: 44020 arg_num_eval
+L: 2123 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 444d0 arg_eval
+L: 2284 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 44610 event_read_fields
+L: 1286 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 45110 parse_header_field
+L: 4964 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/s%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx
+F: 45440 pevent_get_input_buf
+L: 72 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+R: @retval/s
+F: 45460 pevent_get_input_buf_ptr
+L: 77 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+R: @retval
+F: 45480 pevent_buffer_init
+L: 119 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/s%rdi,arg2%rsi
+F: 454b0 breakpoint
+L: 124 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+F: 454d0 alloc_arg
+L: 131 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+F: 454f0 pevent_pid_is_registered
+L: 217 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 455b0 pevent_register_comm
+L: 295 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+R: @retval
+F: 45780 pevent_register_trace_clock
+L: 320 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 457a0 pevent_find_function
+L: 437 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/s
+F: 457d0 pevent_find_function_address
+L: 458 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 45800 pevent_register_function
+L: 479 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4/s%rcx
+R: @retval
+F: 458d0 pevent_print_funcs
+L: 520 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 45980 pevent_register_print_string
+L: 619 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx
+R: @retval
+F: 45a40 pevent_print_printk
+L: 663 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 45ac0 pevent_peek_char
+L: 836 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+R: @retval
+F: 45b00 pevent_read_token
+L: 1084 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval/e:event_type
+F: 45b10 pevent_free_token
+L: 1093 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/s%rdi
+F: 45b30 pevent_find_common_field
+L: 3069 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 45b70 pevent_find_field
+L: 3091 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 45bb0 pevent_find_any_field
+L: 3114 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi
+F: 45c40 process_arg_token
+L: 2855 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/e:event_type%rcx
+R: @retval/e:event_type
+F: 46a70 process_arg
+L: 1610 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/e:event_type
+F: 46ae0 process_op
+L: 1798 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/e:event_type
+F: 474e0 process_fields
+L: 2313 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/e:event_type
+F: 47740 pevent_read_number
+L: 3134 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx
+F: 477c0 __parse_common
+L: 3205 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx,arg5/s%r8
+R: @retval
+F: 47b30 eval_num_arg
+L: 3330 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx,arg4/p%rcx
+R: @retval
+F: 48320 print_str_arg
+L: 3653 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3%rdx,arg4/p%rcx,arg5/s%r8,arg6%r9,arg7/p
+F: 489e0 pevent_read_number_field
+L: 3161 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval
+F: 48a40 pevent_find_event
+L: 3269 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 48ae0 pevent_find_event_by_name
+L: 3302 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/s%rdx
+R: @retval/p
+F: 48bc0 pevent_search_event
+L: 5727 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi,arg3/s%rdx,arg4/s%rcx
+F: 48c60 pevent_data_lat_fmt
+L: 4490 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 48f50 pevent_data_type
+L: 4570 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 48f80 pevent_data_event_from_type
+L: 4582 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/p
+F: 48f90 pevent_data_pid
+L: 4594 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 48fc0 pevent_data_comm_from_pid
+L: 4607 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval/s
+F: 48fd0 pevent_event_info
+L: 4624 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx
+F: 49f50 pevent_print_event
+L: 4657 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4%rcx
+F: 4a200 pevent_list_events
+L: 4774 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/e:event_sort_type%rsi
+R: @retval/p
+F: 4a310 pevent_event_common_fields
+L: 4859 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval/p
+F: 4a330 pevent_event_fields
+L: 4873 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+R: @retval/p
+F: 4a350 pevent_parse_header_page
+L: 5069 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4%rcx
+R: @retval
+F: 4a430 __pevent_parse_format
+L: 5163 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4%rcx,arg5/s%r8
+R: @retval/e:pevent_errno
+F: 4ab10 pevent_strerror
+L: 5349 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/e:pevent_errno%rsi,arg3/s%rdx,arg4%rcx
+R: @retval
+F: 4abc0 get_field_val
+L: 5379 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4/p%rcx,arg5/p%r8,arg6%r9
+F: 4ac50 pevent_get_field_raw
+L: 5409 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4/p%rcx,arg5/p%r8,arg6%r9
+R: @retval/p
+F: 4ad50 pevent_get_field_val
+L: 5456 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4/p%rcx,arg5/p%r8,arg6%r9
+R: @retval
+F: 4adf0 pevent_get_common_field_val
+L: 5481 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4/p%rcx,arg5/p%r8,arg6%r9
+R: @retval
+F: 4ae90 pevent_get_any_field_val
+L: 5506 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4/p%rcx,arg5/p%r8,arg6%r9
+R: @retval
+F: 4af10 pevent_print_num_field
+L: 5531 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/p%rdx,arg4/s%rcx,arg5/p%r8,arg6%r9
+R: @retval
+F: 4aff0 pevent_print_func_field
+L: 5563 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/p%rdx,arg4/s%rcx,arg5/p%r8,arg6%r9
+R: @retval
+F: 4b170 pevent_register_print_function
+L: 5624 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/e:pevent_func_arg_type%rdx,arg4/s%rcx
+R: @retval
+F: 4b370 pevent_unregister_print_function
+L: 5711 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx
+R: @retval
+F: 4b3c0 pevent_register_event_handler
+L: 5764 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi,arg3/s%rdx,arg4/s%rcx,arg5/p%r8,arg6/p%r9
+R: @retval
+F: 4b560 pevent_unregister_event_handler
+L: 5848 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2%rsi,arg3/s%rdx,arg4/s%rcx,arg5/p%r8,arg6/p%r9
+R: @retval
+F: 4b690 pevent_alloc
+L: 5889 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+R: @retval/p
+F: 4b6c0 pevent_ref
+L: 5899 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 4b6d0 pevent_free_format
+L: 5923 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 4b740 __pevent_parse_event
+L: 5271 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4%rcx,arg5/s%r8
+R: @retval/e:pevent_errno
+F: 4b890 pevent_parse_format
+L: 5313 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/s%rdx,arg4%rcx,arg5/s%r8
+R: @retval/e:pevent_errno
+F: 4b8a0 pevent_parse_event
+L: 5335 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3%rdx,arg4/s%rcx
+R: @retval/e:pevent_errno
+F: 4b8f0 pevent_free
+L: 5940 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 4bb40 pevent_unref
+L: 6023 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/event-parse.c
+A: @arg1/p%rdi
+F: 4bb50 expand_buffer
+L: 95 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi
+F: 4bbd0 trace_seq_init
+L: 55 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi
+F: 4bc20 trace_seq_reset
+L: 71 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi
+F: 4bca0 trace_seq_destroy
+L: 86 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi
+F: 4bd20 trace_seq_printf
+L: 124 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval
+F: 4be90 trace_seq_vprintf
+L: 161 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi,arg2/s%rsi,arg3/p%rdx
+R: @retval
+F: 4bf80 trace_seq_puts
+L: 193 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi,arg2/s%rsi
+R: @retval
+F: 4c0a0 trace_seq_putc
+L: 212 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi,arg2%rsi
+R: @retval
+F: 4c1a0 trace_seq_terminate
+L: 226 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi
+F: 4c220 trace_seq_do_printf
+L: 234 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/trace-seq.c
+A: @arg1/p%rdi
+R: @retval
+F: 4c2e0 __vwarning
+L: 28 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/parse-utils.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 4c370 __warning
+L: 40 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/parse-utils.c
+A: @arg1/s%rdi
+F: 4c430 warning
+L: 49 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/parse-utils.c
+A: @arg1/s%rdi
+F: 4c4f0 __vpr_stat
+L: 58 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/parse-utils.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 4c520 __pr_stat
+L: 64 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/parse-utils.c
+A: @arg1/s%rdi
+F: 4c5e0 vpr_stat
+L: 73 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/parse-utils.c
+A: @arg1/s%rdi,arg2/p%rsi
+F: 4c5f0 pr_stat
+L: 78 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/parse-utils.c
+A: @arg1/s%rdi
+F: 4c6b0 __read_8
+L: 96 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4c6c0 __read_8_sw
+L: 103 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4c6e0 __read_4
+L: 120 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4c6f0 __read_4_sw
+L: 127 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4c700 __read_long_8
+L: 150 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 4c720 __read_long_4
+L: 155 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 4c740 __old_next_event
+L: 344 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4c860 translate_data
+L: 359 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi,arg2/p%rsi,arg3/p%rdx,arg4/p%rcx,arg5/p%r8
+R: @retval
+F: 4c970 __next_event
+L: 463 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4ca10 kbuffer_alloc
+L: 180 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/e:kbuffer_long_size%rdi,arg2/e:kbuffer_endian%rsi
+R: @retval/p
+F: 4caf0 kbuffer_free
+L: 238 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+F: 4cb00 kbuffer_translate_data
+L: 432 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1%rdi,arg2/p%rsi,arg3/p%rdx
+R: @retval/p
+F: 4cbc0 kbuffer_next_event
+L: 495 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 4cc10 kbuffer_load_subbuffer
+L: 522 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+R: @retval
+F: 4ccf0 kbuffer_read_event
+L: 573 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi,arg2/p%rsi
+F: 4cd30 kbuffer_timestamp
+L: 591 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4cd40 kbuffer_read_at_offset
+L: 614 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi,arg2%rsi,arg3/p%rdx
+R: @retval/p
+F: 4ce00 kbuffer_subbuffer_size
+L: 645 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4ce10 kbuffer_curr_index
+L: 660 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4ce20 kbuffer_curr_offset
+L: 672 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4ce40 kbuffer_event_size
+L: 684 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4ce60 kbuffer_curr_size
+L: 696 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4ce80 kbuffer_missed_events
+L: 710 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi
+R: @retval
+F: 4cea0 kbuffer_set_old_format
+L: 728 /home/honggyu/work/uftrace/git/uftrace/libtraceevent/kbuffer-parse.c
+A: @arg1/p%rdi

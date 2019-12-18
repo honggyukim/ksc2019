@@ -1,0 +1,2 @@
+SESS timestamp=6142.410529677 pid=1564 sid=86b5aad95b2a8a87 exename="/bin/bash"
+TASK timestamp=6142.570455523 tid=1564 pid=1564
